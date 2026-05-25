@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TechBridge Internship 2026</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ───── NAVBAR ───── -->
 <nav id="navbar">
   <div class="container nav-inner">
     <a href="#" class="nav-logo">Tech<span>Bridge</span></a>
@@ -24,7 +26,7 @@
       <li><a href="#register" class="nav-cta">Register Now</a></li>
     </ul>
 
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
@@ -32,122 +34,254 @@
   </div>
 </nav>
 
-<!-- MOBILE NAV -->
+<!-- Mobile Nav -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#about" class="mob-link">About</a>
+  <a href="#about" class="mob-link">Tracks</a>
   <a href="#register" class="mob-link">Apply</a>
   <a href="#footer" class="mob-link">Contact</a>
 </div>
 
-<!-- HERO -->
+<!-- ───── HERO ───── -->
 <section id="hero">
   <div class="container hero-wrapper">
 
     <div class="hero-content">
-      <span class="tag">2025 Summer Cohort · Open</span>
+      <div class="hero-eyebrow reveal">
+        <span class="tag">2025 Summer Cohort · Open</span>
+      </div>
 
-      <h1 class="hero-title">
-        Launch Your <br>
+      <h1 class="hero-title reveal">
+        Launch Your<br>
         <em>Tech Career</em><br>
         This Summer
       </h1>
 
-      <p class="hero-sub">
-        A 12-week immersive internship program designed to give ambitious students hands-on experience in modern technologies.
+      <p class="hero-sub reveal">
+        A 12-week immersive internship program designed to give ambitious students hands-on experience in the world's most in-demand technologies.
       </p>
 
-      <div class="hero-actions">
+      <div class="hero-actions reveal">
         <a href="#register" class="btn-primary">Apply Now →</a>
         <a href="#about" class="btn-ghost">Learn More</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div>
+          <div class="stat-num">340+</div>
+          <div class="stat-label">Graduates</div>
+        </div>
+
+        <div>
+          <div class="stat-num">92%</div>
+          <div class="stat-label">Placement Rate</div>
+        </div>
+
+        <div>
+          <div class="stat-num">48</div>
+          <div class="stat-label">Partner Companies</div>
+        </div>
       </div>
     </div>
 
     <div class="hero-visual">
+
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+
       <div class="card-main">
-        <h3>Frontend Internship</h3>
-        <p>React • TypeScript • UI Design</p>
+        <div class="card-main-top">
+          <div class="avatar">JD</div>
+
+          <div>
+            <div class="card-name">Jamie Doe</div>
+            <div class="card-role">Frontend Intern · Cohort 8</div>
+          </div>
+        </div>
+
+        <div class="card-badge">Currently Learning</div>
+
+        <div class="progress-label">
+          <span>React & TypeScript</span>
+          <span>78%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:78%"></div>
+        </div>
+
+        <div class="progress-label">
+          <span>System Design</span>
+          <span>54%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:54%"></div>
+        </div>
+
+        <div class="progress-label">
+          <span>Cloud Deployment</span>
+          <span>31%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:31%"></div>
+        </div>
+      </div>
+
+      <div class="card-mini card-mini-1">
+        <div class="mini-icon">🚀</div>
+        <div class="mini-val">12 Weeks</div>
+        <div class="mini-sub">Intensive Program</div>
+      </div>
+
+      <div class="card-mini card-mini-2">
+        <div class="mini-icon">💼</div>
+        <div class="mini-val">₹25k/mo</div>
+        <div class="mini-sub">Stipend (merit)</div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ───── ABOUT ───── -->
 <section id="about">
   <div class="container">
-    <span class="tag about-tag">About Program</span>
+    <div class="about-grid">
 
-    <h2 class="about-title">
-      More than training — it's your runway.
-    </h2>
+      <div>
+        <span class="tag about-tag reveal">About the Program</span>
 
-    <p class="about-body">
-      TechBridge connects students with mentors, projects, and career opportunities.
-    </p>
+        <h2 class="about-title reveal">
+          More than training —<br>
+          it's your runway.
+        </h2>
+
+        <p class="about-body reveal">
+          TechBridge connects exceptional students directly with industry mentors, real projects, and career networks.
+        </p>
+      </div>
+
+      <div class="about-right reveal">
+
+        <div class="track-card">
+          <div class="track-num">TRACK 01</div>
+          <div class="track-title">Frontend Engineering</div>
+          <div class="track-desc">
+            Build polished interfaces with modern React, TypeScript, and design systems.
+          </div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-num">TRACK 02</div>
+          <div class="track-title">Backend & APIs</div>
+          <div class="track-desc">
+            Design scalable services, RESTful APIs, and database architectures.
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- REGISTER -->
+<!-- ───── REGISTER ───── -->
 <section id="register">
   <div class="container">
 
-    <div class="reg-header">
+    <div class="reg-header reveal">
       <span class="tag">Applications Open</span>
+
       <h2 class="reg-title">Register for the Program</h2>
+
+      <p class="reg-sub">
+        Fill in your details below.
+      </p>
     </div>
 
-    <div class="form-card">
+    <div class="form-card reveal">
 
       <div class="success-banner" id="successBanner">
-        Application submitted successfully!
+        <div class="success-icon">✓</div>
+
+        <div>
+          <div class="success-text title-success">
+            Application submitted!
+          </div>
+
+          <div class="success-text">
+            Thank you! We'll review your application soon.
+          </div>
+        </div>
       </div>
 
-      <form id="regForm">
+      <form id="regForm" novalidate>
 
         <div class="form-grid">
 
           <div class="field">
-            <label>First Name *</label>
-            <input type="text" id="firstName">
+            <label>First Name <span class="req">*</span></label>
+
+            <input type="text" id="firstName" placeholder="Aarav">
+
             <span class="field-error" id="firstNameErr">
-              Enter first name
+              Please enter your first name.
             </span>
           </div>
 
           <div class="field">
-            <label>Email *</label>
-            <input type="email" id="email">
-            <span class="field-error" id="emailErr">
-              Enter valid email
-            </span>
-          </div>
+            <label>Email Address <span class="req">*</span></label>
 
-          <div class="field form-full">
-            <label>Motivation *</label>
-            <textarea id="motivation"></textarea>
-            <span class="field-error" id="motivationErr">
-              Minimum 30 characters
+            <input type="email" id="email" placeholder="aarav@example.com">
+
+            <span class="field-error" id="emailErr">
+              Please enter a valid email address.
             </span>
           </div>
 
         </div>
 
-        <button type="submit" class="btn-submit" id="submitBtn">
-          Submit Application →
-        </button>
+        <div class="form-submit">
+          <p class="submit-note">
+            🔒 Your data is safe and never shared.
+          </p>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            Submit Application →
+          </button>
+        </div>
 
       </form>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ───── FOOTER ───── -->
 <footer id="footer">
-  <div class="container footer-bottom">
-    <p>© 2025 TechBridge. All rights reserved.</p>
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          Tech<span>Bridge</span>
+        </a>
+
+        <p>
+          Bridging ambitious students and world-class tech companies since 2018.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 TechBridge. All rights reserved.</span>
+    </div>
+
   </div>
 </footer>
 
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
